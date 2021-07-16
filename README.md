@@ -6,7 +6,7 @@ This assignment was to implement back end for Note Taker application with given 
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![image](https://user-images.githubusercontent.com/82896010/125889920-088648b8-11c7-41a5-9ea6-94b5375b97a9.png)
 
 ## GitHub Repo Link
 
