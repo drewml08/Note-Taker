@@ -29,4 +29,18 @@ app.post('/api/notes', (req, res) => {
     res.json(newNote);
   });
 
+  app.delete('/api/notes/:id', (req, res) => {
+    const id = req.params.id;
+
+    for (var i = 0; i < notes.length; i++) {
+      if (notes[i].id === id) {
+        notes.splice(i, 1);
+        break;
+      }
+    }
+    fs.writeFileSync(path.join(__dirname, 'db/db.json'), JSON.stringify(notes), 'utf8');
+    res.json(notes);
+
+  });
+
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
